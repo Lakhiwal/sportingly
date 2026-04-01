@@ -1,0 +1,2005 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sportingly! — Decathlon Warranty: A Satirical Tribute</title>
+  <meta name="description" content="A satirical tribute to Decathlon's world-class warranty support. 1 cracked frame, 21 emails, 37 days, 2 rejections. A masterclass in corporate patience-testing.">
+  <meta name="theme-color" content="#0082C3">
+  <meta name="color-scheme" content="dark light">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Sportingly! — Decathlon Warranty Experience">
+  <meta property="og:description" content="1 cracked frame. 2 rejections. 21 emails. 37 days. A satirical tribute to Decathlon's commitment to ignoring warranty claims — Sportingly!">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sportingly.in/">
+  <meta property="og:site_name" content="Sportingly!">
+  <meta property="og:locale" content="en_IN">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sportingly! — Decathlon Warranty Experience">
+  <meta name="twitter:description" content="1 cracked frame. 2 rejections. 21 emails. 37 days. Sportingly!">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Sportingly! — Decathlon Warranty Experience",
+    "description": "A satirical tribute to Decathlon's warranty support. 1 cracked frame, 2 rejections, 21 emails, 37 days.",
+    "url": "https://sportingly.in/",
+    "inLanguage": "en",
+    "datePublished": "2026-04-01",
+    "author": { "@type": "Person", "name": "A Patient Decathlon Customer" }
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --dec-blue: #0082C3;
+      --dec-dark-blue: #005A8A;
+      --dec-black: #0D0D0D;
+      --dec-white: #FAFAFA;
+      --dec-light: #F0F2F5;
+      --dec-gray: #8A8F98;
+      --dec-dark-gray: #2A2D35;
+      --dec-green: #34C759;
+      --dec-red: #FF3B30;
+      --dec-amber: #FF9F0A;
+      --dec-crack: #FF453A;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      color: var(--dec-black);
+      background: var(--dec-white);
+      overflow-x: hidden;
+    }
+
+    .mono { font-family: 'JetBrains Mono', monospace; }
+
+    /* ---- NAV ---- */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(13,13,13,0.95);
+      backdrop-filter: blur(20px);
+      z-index: 1000;
+      padding: 0 2rem;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .logo-icon {
+      width: 28px;
+      height: 28px;
+      border-radius: 6px;
+      background: var(--dec-blue);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.75rem;
+      font-weight: 800;
+      color: white;
+      position: relative;
+    }
+
+    .logo-icon::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 14px;
+      height: 2px;
+      background: white;
+      transform: translate(-50%, -50%) rotate(-45deg);
+    }
+
+    .logo-text {
+      font-size: 1.2rem;
+      font-weight: 800;
+      color: var(--dec-white);
+      letter-spacing: -0.03em;
+    }
+
+    .logo-text span { color: var(--dec-blue); }
+    .logo-text .strike { text-decoration: line-through; opacity: 0.3; font-weight: 400; }
+
+    .nav-links {
+      display: flex;
+      gap: 1.75rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: var(--dec-gray);
+      text-decoration: none;
+      font-size: 0.8rem;
+      font-weight: 500;
+      transition: color 0.2s;
+      letter-spacing: 0.01em;
+    }
+
+    .nav-links a:hover { color: var(--dec-blue); }
+
+    /* ---- HERO ---- */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 7rem 2rem 5rem;
+      background: var(--dec-black);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 80% 60% at 20% 40%, rgba(0,130,195,0.08) 0%, transparent 60%),
+        radial-gradient(ellipse 60% 80% at 80% 60%, rgba(255,69,58,0.05) 0%, transparent 60%);
+      animation: heroGlow 20s ease-in-out infinite alternate;
+    }
+
+    @keyframes heroGlow {
+      0% { opacity: 0.6; }
+      100% { opacity: 1; }
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 950px;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      padding: 0.35rem 1rem;
+      border: 1px solid rgba(0,130,195,0.35);
+      border-radius: 50px;
+      color: var(--dec-blue);
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+      background: rgba(0,130,195,0.06);
+    }
+
+    .hero h1 {
+      font-size: clamp(2.5rem, 6vw, 4.8rem);
+      font-weight: 900;
+      color: var(--dec-white);
+      line-height: 1.05;
+      letter-spacing: -0.04em;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero h1 .blue { color: var(--dec-blue); }
+    .hero h1 .crack-text {
+      color: var(--dec-crack);
+      position: relative;
+    }
+
+    .hero-sub {
+      font-size: 1.15rem;
+      color: rgba(255,255,255,0.45);
+      max-width: 620px;
+      margin: 0 auto 3rem;
+      line-height: 1.65;
+      font-weight: 300;
+    }
+
+    .hero-stats {
+      display: flex;
+      gap: 2.5rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .hero-stat { text-align: center; }
+
+    .hero-stat-number {
+      font-size: 2.8rem;
+      font-weight: 900;
+      color: var(--dec-blue);
+      line-height: 1;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .hero-stat-number.red { color: var(--dec-crack); }
+
+    .hero-stat-label {
+      font-size: 0.7rem;
+      color: rgba(255,255,255,0.35);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-top: 0.5rem;
+    }
+
+    /* ---- TICKER ---- */
+    .ticker-wrap {
+      background: var(--dec-blue);
+      overflow: hidden;
+      padding: 0.65rem 0;
+    }
+
+    .ticker {
+      display: flex;
+      animation: tickerScroll 40s linear infinite;
+      white-space: nowrap;
+    }
+
+    .ticker span {
+      color: var(--dec-white);
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 0 2.5rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    @keyframes tickerScroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    /* ---- SECTIONS ---- */
+    section {
+      padding: 6rem 2rem;
+      scroll-margin-top: 80px;
+    }
+
+    .section-dark { background: var(--dec-black); color: var(--dec-white); }
+    .section-light { background: var(--dec-light); }
+    .section-blue { background: var(--dec-blue); color: var(--dec-white); }
+
+    .container { max-width: 1100px; margin: 0 auto; }
+
+    .section-label {
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--dec-blue);
+      margin-bottom: 0.75rem;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .section-dark .section-label { color: #4DB8E8; }
+
+    .section-title {
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+      margin-bottom: 1rem;
+    }
+
+    .section-subtitle {
+      font-size: 1.05rem;
+      color: var(--dec-gray);
+      max-width: 600px;
+      line-height: 1.6;
+      font-weight: 300;
+    }
+
+    .section-dark .section-subtitle { color: rgba(255,255,255,0.5); }
+
+    /* ---- SERVICES ---- */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.25rem;
+      margin-top: 2.5rem;
+    }
+
+    .service-card {
+      background: rgba(255,255,255,0.025);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 14px;
+      padding: 1.75rem;
+      transition: all 0.3s;
+    }
+
+    .service-card:hover {
+      border-color: rgba(0,130,195,0.3);
+      transform: translateY(-2px);
+      background: rgba(0,130,195,0.03);
+    }
+
+    .service-icon { font-size: 1.75rem; margin-bottom: 0.75rem; }
+
+    .service-card h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      color: var(--dec-white);
+    }
+
+    .service-card p {
+      font-size: 0.88rem;
+      color: rgba(255,255,255,0.45);
+      line-height: 1.6;
+    }
+
+    .service-tag {
+      display: inline-block;
+      margin-top: 0.75rem;
+      padding: 0.2rem 0.6rem;
+      border-radius: 50px;
+      font-size: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    .tag-sportingly {
+      background: rgba(0,130,195,0.15);
+      color: var(--dec-blue);
+    }
+
+    .tag-denied {
+      background: rgba(255,59,48,0.12);
+      color: var(--dec-crack);
+    }
+
+    /* ---- TIMELINE ---- */
+    .timeline {
+      position: relative;
+      margin-top: 2.5rem;
+      padding-left: 3rem;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 7px;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: linear-gradient(to bottom, var(--dec-blue), var(--dec-crack), rgba(0,130,195,0.1));
+    }
+
+    .timeline-item {
+      position: relative;
+      margin-bottom: 2.25rem;
+      padding-bottom: 0.75rem;
+    }
+
+    .timeline-dot {
+      position: absolute;
+      left: -3rem;
+      top: 0.25rem;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      border: 3px solid var(--dec-blue);
+      background: var(--dec-white);
+    }
+
+    .timeline-dot.denied { background: var(--dec-crack); border-color: var(--dec-crack); }
+    .timeline-dot.waiting { background: var(--dec-amber); border-color: var(--dec-amber); }
+    .timeline-dot.resolved { background: var(--dec-green); border-color: var(--dec-green); }
+
+    .timeline-date {
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: var(--dec-blue);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 0.4rem;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .timeline-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-bottom: 0.4rem;
+    }
+
+    .timeline-body {
+      font-size: 0.9rem;
+      color: var(--dec-dark-gray);
+      line-height: 1.6;
+    }
+
+    .timeline-status {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      margin-top: 0.6rem;
+      padding: 0.25rem 0.7rem;
+      border-radius: 50px;
+      font-size: 0.65rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .status-denied {
+      background: rgba(255,59,48,0.08);
+      color: var(--dec-crack);
+    }
+
+    .status-waiting {
+      background: rgba(255,159,10,0.08);
+      color: var(--dec-amber);
+    }
+
+    .status-resolved {
+      background: rgba(52,199,89,0.08);
+      color: var(--dec-green);
+    }
+
+    /* ---- QUOTE ---- */
+    .quote-section {
+      text-align: center;
+      padding: 5rem 2rem;
+    }
+
+    .quote-text {
+      font-size: clamp(1.4rem, 3vw, 2.2rem);
+      font-weight: 300;
+      line-height: 1.4;
+      max-width: 800px;
+      margin: 0 auto;
+      color: rgba(255,255,255,0.9);
+    }
+
+    .quote-text em {
+      color: var(--dec-blue);
+      font-style: normal;
+      font-weight: 700;
+    }
+
+    .quote-attr {
+      margin-top: 1.25rem;
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.3);
+    }
+
+    /* ---- CEO LETTER ---- */
+    .ceo-letter {
+      max-width: 700px;
+      margin: 2.5rem auto 0;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 14px;
+      padding: 2.5rem;
+      position: relative;
+    }
+
+    .ceo-letter::before {
+      content: '"';
+      position: absolute;
+      top: -10px;
+      left: 20px;
+      font-size: 5rem;
+      color: var(--dec-blue);
+      opacity: 0.15;
+      font-family: Georgia, serif;
+      line-height: 1;
+    }
+
+    .ceo-letter p {
+      font-size: 0.92rem;
+      line-height: 1.8;
+      color: rgba(255,255,255,0.6);
+      margin-bottom: 1.1rem;
+    }
+
+    .ceo-letter .signature {
+      margin-top: 1.5rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .ceo-letter .signature .name {
+      font-weight: 700;
+      color: var(--dec-white);
+      font-size: 0.95rem;
+    }
+
+    .ceo-letter .sig-title {
+      font-size: 0.75rem;
+      color: rgba(255,255,255,0.3);
+      margin-top: 0.2rem;
+    }
+
+    /* ---- COMPLAINT WALL ---- */
+    .complaints-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.15rem;
+      margin-top: 2.5rem;
+    }
+
+    .complaint-card {
+      background: var(--dec-white);
+      border-radius: 12px;
+      padding: 1.5rem;
+      border-left: 4px solid var(--dec-blue);
+      transition: transform 0.2s;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+    }
+
+    .complaint-card:hover { transform: translateY(-2px); }
+
+    .complaint-category {
+      font-size: 0.6rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--dec-blue);
+      margin-bottom: 0.6rem;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .complaint-text {
+      font-size: 0.9rem;
+      line-height: 1.6;
+      color: var(--dec-dark-gray);
+      margin-bottom: 0.75rem;
+    }
+
+    .complaint-meta {
+      font-size: 0.7rem;
+      color: var(--dec-gray);
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .complaint-rating { color: var(--dec-blue); font-weight: 700; }
+
+    /* ---- GLOSSARY ---- */
+    .glossary-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 0;
+      margin-top: 2.5rem;
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 14px;
+      overflow: hidden;
+    }
+
+    .glossary-item {
+      padding: 1.5rem;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      border-right: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .glossary-term {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--dec-blue);
+      margin-bottom: 0.35rem;
+    }
+
+    .glossary-official {
+      font-size: 0.75rem;
+      color: rgba(255,255,255,0.25);
+      margin-bottom: 0.4rem;
+      font-style: italic;
+    }
+
+    .glossary-actual {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.6);
+      line-height: 1.5;
+    }
+
+    /* ---- COMPARISON TABLE ---- */
+    .comparison-table {
+      width: 100%;
+      margin-top: 2.5rem;
+      border-collapse: collapse;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .comparison-table th {
+      background: var(--dec-blue);
+      color: var(--dec-white);
+      padding: 0.9rem 1.25rem;
+      text-align: left;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    .comparison-table td {
+      padding: 0.9rem 1.25rem;
+      font-size: 0.88rem;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+      color: rgba(255,255,255,0.65);
+    }
+
+    .comparison-table tr:nth-child(even) td {
+      background: rgba(255,255,255,0.015);
+    }
+
+    /* ---- COUNTER ---- */
+    .counter-section { text-align: center; padding: 4.5rem 2rem; }
+
+    .counter-number {
+      font-size: clamp(3.5rem, 10vw, 7rem);
+      font-weight: 900;
+      color: var(--dec-white);
+      line-height: 1;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .counter-label {
+      font-size: 1.1rem;
+      color: rgba(255,255,255,0.8);
+      margin-top: 0.75rem;
+      font-weight: 300;
+    }
+
+    .counter-sub {
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.6);
+      margin-top: 0.4rem;
+    }
+
+    /* ---- BINGO ---- */
+    .bingo-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 3px;
+      margin-top: 2.5rem;
+      max-width: 680px;
+      margin-left: auto;
+      margin-right: auto;
+      background: rgba(255,255,255,0.04);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .bingo-cell {
+      aspect-ratio: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0.6rem;
+      font-size: 0.65rem;
+      font-weight: 500;
+      color: rgba(255,255,255,0.65);
+      background: rgba(255,255,255,0.02);
+      border: 1px solid rgba(255,255,255,0.04);
+      cursor: pointer;
+      transition: all 0.2s;
+      line-height: 1.3;
+      font-family: inherit;
+      appearance: none;
+    }
+
+    .bingo-cell:hover {
+      background: rgba(0,130,195,0.15);
+      color: var(--dec-white);
+    }
+
+    .bingo-cell.stamped {
+      background: var(--dec-blue) !important;
+      color: var(--dec-white) !important;
+      font-weight: 700;
+    }
+
+    .bingo-cell.free {
+      background: var(--dec-blue);
+      color: var(--dec-white);
+      font-weight: 800;
+      font-size: 0.55rem;
+      letter-spacing: 0.05em;
+    }
+
+    /* ---- FAQ ---- */
+    .faq-list { max-width: 800px; margin: 2.5rem auto 0; }
+
+    .faq-item {
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      padding: 1.5rem 0;
+    }
+
+    .faq-question {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--dec-white);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      background: none;
+      border: none;
+      padding: 0;
+      text-align: left;
+      font-family: inherit;
+    }
+
+    .faq-question::after {
+      content: '+';
+      color: var(--dec-blue);
+      font-size: 1.4rem;
+      font-weight: 300;
+      transition: transform 0.3s;
+      flex-shrink: 0;
+      margin-left: 1rem;
+    }
+
+    .faq-item.open .faq-question::after { transform: rotate(45deg); }
+
+    .faq-answer {
+      font-size: 0.88rem;
+      color: rgba(255,255,255,0.45);
+      line-height: 1.7;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease, padding 0.4s ease;
+    }
+
+    .faq-item.open .faq-answer {
+      max-height: 500px;
+      padding-top: 0.5rem;
+    }
+
+    /* ---- AWARDS ---- */
+    .awards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.25rem;
+      margin-top: 2.5rem;
+    }
+
+    .award-card {
+      text-align: center;
+      padding: 2rem 1.25rem;
+      background: rgba(0,130,195,0.04);
+      border: 1px solid rgba(0,130,195,0.12);
+      border-radius: 14px;
+      transition: transform 0.2s;
+    }
+
+    .award-card:hover { transform: translateY(-3px); }
+
+    .award-icon { font-size: 2.25rem; margin-bottom: 0.75rem; }
+
+    .award-title {
+      font-size: 0.9rem;
+      font-weight: 700;
+      margin-bottom: 0.4rem;
+    }
+
+    .award-desc {
+      font-size: 0.78rem;
+      color: var(--dec-gray);
+      line-height: 1.5;
+    }
+
+    .award-year {
+      display: inline-block;
+      margin-top: 0.6rem;
+      font-size: 0.6rem;
+      font-weight: 700;
+      color: var(--dec-blue);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    /* ---- FOOTER ---- */
+    footer {
+      background: var(--dec-black);
+      color: rgba(255,255,255,0.5);
+      padding: 3rem 2rem;
+      text-align: center;
+      border-top: 1px solid rgba(255,255,255,0.05);
+    }
+
+    .footer-disclaimer {
+      max-width: 600px;
+      margin: 0 auto;
+      font-size: 0.72rem;
+      line-height: 1.8;
+    }
+
+    .footer-disclaimer a { color: var(--dec-blue); text-decoration: none; }
+
+    .footer-tagline {
+      margin-top: 1.5rem;
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.5);
+      font-weight: 300;
+    }
+
+    /* ---- ESCALATION ---- */
+    .escalation-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.15rem;
+      margin-top: 2rem;
+    }
+
+    .escalation-card {
+      background: var(--dec-white);
+      border-radius: 12px;
+      padding: 1.5rem;
+      border-left: 4px solid var(--dec-dark-gray);
+      box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+    }
+
+    .escalation-step {
+      font-size: 0.6rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--dec-dark-gray);
+      margin-bottom: 0.5rem;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .escalation-text {
+      font-size: 0.9rem;
+      line-height: 1.6;
+      color: var(--dec-dark-gray);
+    }
+
+    .escalation-text strong { color: var(--dec-black); }
+
+    /* ---- ANIMATIONS ---- */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(25px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+
+    .fade-up.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .hero::before, .ticker { animation: none !important; }
+      .fade-up { transition: none !important; transform: none !important; opacity: 1 !important; }
+    }
+
+    /* ---- RESPONSIVE ---- */
+    @media (max-width: 768px) {
+      nav { padding: 0 1rem; }
+      .nav-links { display: none; }
+      .nav-links.open { display: flex; flex-direction: column; position: absolute; top: 60px; left: 0; right: 0; background: rgba(13,13,13,0.98); padding: 1rem 1.5rem; gap: 1rem; border-bottom: 1px solid rgba(255,255,255,0.06); }
+      section { padding: 3.5rem 1.15rem; }
+      .hero-stats { gap: 1.25rem; }
+      .hero-stat-number { font-size: 2rem; }
+      .bingo-cell { font-size: 0.5rem; padding: 0.35rem; }
+      .timeline { padding-left: 2.25rem; }
+      .timeline::before { left: 5px; }
+      .timeline-dot { left: -2.25rem; width: 12px; height: 12px; }
+    }
+
+    .hamburger {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0.5rem;
+    }
+
+    .hamburger span {
+      display: block;
+      width: 20px;
+      height: 2px;
+      background: var(--dec-white);
+      margin: 4px 0;
+      transition: all 0.3s;
+    }
+
+    @media (max-width: 768px) {
+      .hamburger { display: block; }
+    }
+
+    /* ---- STATUS BANNER ---- */
+    .status-banner {
+      background: linear-gradient(90deg, #1a0505, #0D0D0D, #1a0505);
+      border-bottom: 2px solid var(--dec-crack);
+      padding: 0.6rem 1.5rem;
+      text-align: center;
+      font-size: 0.75rem;
+      color: rgba(255,255,255,0.7);
+      position: relative;
+      margin-top: 60px;
+    }
+
+    .status-banner .status-dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--dec-amber);
+      margin-right: 0.5rem;
+      animation: statusPulse 2s infinite;
+    }
+
+    .status-banner .status-dot.resolved {
+      background: var(--dec-green);
+    }
+
+    @keyframes statusPulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+
+    .status-banner strong {
+      color: var(--dec-amber);
+      font-weight: 700;
+    }
+
+    .status-banner a {
+      color: var(--dec-blue);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    /* ---- SUBMIT STORY ---- */
+    .story-section {
+      text-align: center;
+      padding: 4rem 2rem;
+      background: linear-gradient(135deg, #0a1a2a 0%, var(--dec-black) 50%, #0a1a2a 100%);
+      border-top: 1px solid rgba(0,130,195,0.15);
+      border-bottom: 1px solid rgba(0,130,195,0.15);
+    }
+
+    .story-box {
+      max-width: 700px;
+      margin: 2rem auto 0;
+      background: rgba(0,130,195,0.04);
+      border: 1px solid rgba(0,130,195,0.15);
+      border-radius: 16px;
+      padding: 2.5rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .story-box::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, transparent, var(--dec-blue), transparent);
+    }
+
+    .story-email {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.7rem 1.5rem;
+      background: var(--dec-blue);
+      color: var(--dec-white);
+      font-size: 1rem;
+      font-weight: 700;
+      text-decoration: none;
+      border-radius: 50px;
+      letter-spacing: 0.02em;
+      transition: all 0.2s;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .story-email:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0,130,195,0.3);
+    }
+
+    .story-note {
+      margin-top: 1rem;
+      font-size: 0.75rem;
+      color: rgba(255,255,255,0.3);
+      line-height: 1.6;
+    }
+
+    /* ---- DONATE ---- */
+    .donate-section {
+      text-align: center;
+    }
+
+    .donate-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.25rem;
+      max-width: 700px;
+      margin: 2rem auto 0;
+    }
+
+    .donate-card {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 14px;
+      padding: 2rem;
+      text-decoration: none;
+      color: var(--dec-white);
+      transition: all 0.3s;
+      display: block;
+    }
+
+    .donate-card:hover {
+      border-color: var(--dec-blue);
+      transform: translateY(-3px);
+      background: rgba(0,130,195,0.05);
+      box-shadow: 0 6px 25px rgba(0,130,195,0.15);
+    }
+
+    .donate-icon { font-size: 2rem; margin-bottom: 0.75rem; }
+
+    .donate-card h3 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    .donate-card p {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.5);
+      line-height: 1.5;
+    }
+
+    /* ---- SHARE BUTTON ---- */
+    .share-float {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      z-index: 999;
+      display: flex;
+      gap: 0.5rem;
+    }
+
+    .share-btn {
+      padding: 0.65rem 1.2rem;
+      border-radius: 50px;
+      border: none;
+      font-size: 0.78rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s;
+      font-family: inherit;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .share-btn-x {
+      background: var(--dec-black);
+      color: var(--dec-white);
+      border: 1px solid rgba(255,255,255,0.15);
+    }
+
+    .share-btn-x:hover {
+      background: #1DA1F2;
+      border-color: #1DA1F2;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 15px rgba(29,161,242,0.3);
+    }
+
+    .share-btn-copy {
+      background: var(--dec-blue);
+      color: var(--dec-white);
+    }
+
+    .share-btn-copy:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 15px rgba(0,130,195,0.3);
+    }
+
+    .share-btn-wa {
+      background: #25D366;
+      color: var(--dec-white);
+    }
+
+    .share-btn-wa:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 15px rgba(37,211,102,0.3);
+    }
+
+    @media (max-width: 768px) {
+      .share-float { bottom: 1rem; right: 1rem; }
+      .share-btn { padding: 0.5rem 0.9rem; font-size: 0.7rem; }
+    }
+
+    /* ---- LOADING SCREEN ---- */
+    .loading-screen {
+      position: fixed;
+      inset: 0;
+      background: var(--dec-black);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      transition: opacity 0.5s ease;
+    }
+
+    .loading-screen.hidden {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .loading-inner {
+      text-align: center;
+      color: var(--dec-white);
+    }
+
+    .loading-inner p {
+      font-size: 1.1rem;
+      font-weight: 300;
+      color: rgba(255,255,255,0.5);
+      margin-bottom: 0.5rem;
+    }
+
+    .loading-inner .loading-main {
+      font-size: 2rem;
+      font-weight: 800;
+      background: linear-gradient(90deg, var(--dec-blue), var(--dec-white));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 2rem;
+    }
+
+    .loading-spinner {
+      width: 40px;
+      height: 40px;
+      margin: 0 auto;
+      border: 3px solid rgba(0,130,195,0.2);
+      border-top-color: var(--dec-blue);
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin { to { transform: rotate(360deg); } }
+  </style>
+</head>
+<body>
+
+  <!-- Loading Screen -->
+  <div id="loading-screen" class="loading-screen">
+    <div class="loading-inner">
+      <p>Please allow us some additional time...</p>
+      <div class="loading-main">Sportingly!</div>
+      <div class="loading-spinner"></div>
+    </div>
+  </div>
+
+  <nav>
+    <div class="logo">
+      <div class="logo-icon"></div>
+      <div class="logo-text">decathlon <span>warranty</span><span class="strike">care</span></div>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#case-study">Case Study</a></li>
+      <li><a href="#ceo-letter">CEO Letter</a></li>
+      <li><a href="#wall">The Wall</a></li>
+      <li><a href="#glossary">Glossary</a></li>
+      <li><a href="#faq">FIQs</a></li>
+      <li><a href="#bingo">Bingo</a></li>
+      <li><a href="#stories">Stories</a></li>
+      <li><a href="#support">Support</a></li>
+    </ul>
+  </nav>
+
+  <!-- STATUS BANNER -->
+  <div class="status-banner">
+    <span class="status-dot"></span>
+    <strong>REPLACEMENT STATUS: PENDING</strong> — This site goes dark when the bike arrives. Until then, Sportingly!
+  </div>
+
+  <main>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <div class="hero-badge">★★★★★ Sportingly! A Premium Warranty Experience ★★★★★</div>
+      <h1>
+        Your frame <span class="crack-text">cracked.</span><br>
+        Your warranty <span class="blue">didn't apply.</span>
+      </h1>
+      <p class="hero-sub">
+        Welcome to Decathlon Warranty — where a ₹19,999 exercise bike develops a structural crack,
+        gets rejected over the phone on the spot, rejected again by email in 20 minutes,
+        and it takes 37 days, 21 emails, and a National Consumer Helpline CC
+        to hear the word "replacement."
+      </p>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="hero-stat-number">37</div>
+          <div class="hero-stat-label">Days to Resolution</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-number">21</div>
+          <div class="hero-stat-label">Emails Exchanged</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-number red">2</div>
+          <div class="hero-stat-label">Warranty Rejections</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-number">5</div>
+          <div class="hero-stat-label">"Sportingly!" Sign-offs</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-number">&infin;</div>
+          <div class="hero-stat-label">"Please Allow Time"</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TICKER -->
+  <div class="ticker-wrap">
+    <div class="ticker" id="ticker">
+      <span>SPORTINGLY! ✓</span>
+      <span>YOUR CONCERN HAS BEEN ESCALATED TO THE RELEVANT TEAM</span>
+      <span>WE KINDLY REQUEST A LEAD TIME OF 72 HOURS</span>
+      <span>PLEASE DO NOT WORRY</span>
+      <span>WE TRULY EMPATHIZE WITH YOUR CONCERN</span>
+      <span>YOUR SATISFACTION IS VERY IMPORTANT TO US</span>
+      <span>WE ARE ACTIVELY WORKING ON THIS CASE</span>
+      <span>KINDLY ALLOW US SOME ADDITIONAL TIME</span>
+      <span>COULD YOU PLEASE SHARE IMAGES (AGAIN)</span>
+      <span>WE WILL GET BACK TO YOU AS SOON AS POSSIBLE</span>
+      <span>SPORTINGLY! ✓</span>
+      <span>YOUR CONCERN HAS BEEN ESCALATED TO THE RELEVANT TEAM</span>
+      <span>WE KINDLY REQUEST A LEAD TIME OF 72 HOURS</span>
+      <span>PLEASE DO NOT WORRY</span>
+      <span>WE TRULY EMPATHIZE WITH YOUR CONCERN</span>
+      <span>YOUR SATISFACTION IS VERY IMPORTANT TO US</span>
+      <span>WE ARE ACTIVELY WORKING ON THIS CASE</span>
+      <span>KINDLY ALLOW US SOME ADDITIONAL TIME</span>
+      <span>COULD YOU PLEASE SHARE IMAGES (AGAIN)</span>
+      <span>WE WILL GET BACK TO YOU AS SOON AS POSSIBLE</span>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section class="section-dark" id="services">
+    <div class="container">
+      <div class="section-label">What They Offer</div>
+      <h2 class="section-title fade-up">Premium Products,<br>Premium Runaround.</h2>
+      <p class="section-subtitle fade-up">Decathlon doesn't just sell sports equipment. They sell the full post-purchase experience — from hope to despair, signed off with "Sportingly!" every single time.</p>
+
+      <div class="services-grid">
+        <div class="service-card fade-up">
+          <div class="service-icon">🔨</div>
+          <h3>Double-Tap Rejection</h3>
+          <p>Report a cracked frame over the phone? Rejected verbally, no paper trail. Email the same thing? Rejected in 20 minutes, no clause cited. Two rejections across two channels in 4 days. The warranty team speedruns denial like it's a relay event.</p>
+          <span class="service-tag tag-denied">Rejected ×2</span>
+        </div>
+        <div class="service-card fade-up">
+          <div class="service-icon">📸</div>
+          <h3>Photo Collection Service</h3>
+          <p>Already sent photos? Great. They'll ask again. Clearly the first set evaporated into the digital void alongside your warranty claim. Think of it as a photography challenge.</p>
+          <span class="service-tag tag-sportingly">Sportingly!</span>
+        </div>
+        <div class="service-card fade-up">
+          <div class="service-icon">⏰</div>
+          <h3>The 72-Hour Promise™</h3>
+          <p>Every email promises an update in 48-72 hours. What they don't tell you is that these hours are measured in Decathlon Time™, where 72 hours equals approximately one geological epoch.</p>
+          <span class="service-tag tag-sportingly">Lead Time</span>
+        </div>
+        <div class="service-card fade-up">
+          <div class="service-icon">🔄</div>
+          <h3>Agent Rotation Therapy</h3>
+          <p>Meet Agent M. Then Agent S. Then Agent R. Each one will empathize with your concern independently, as if the previous empathy never happened. It's like Groundhog Day, but with "User Happiness Officers."</p>
+          <span class="service-tag tag-denied">3 Agents, 1 Issue</span>
+        </div>
+        <div class="service-card fade-up">
+          <div class="service-icon">📧</div>
+          <h3>Escalation Theatre</h3>
+          <p>"Your concern has been escalated to the relevant team." This sentence appears in 6 of 11 Decathlon emails. The relevant team has never been identified. They may not exist. We believe they are a metaphor.</p>
+          <span class="service-tag tag-sportingly">Relevant Team™</span>
+        </div>
+        <div class="service-card fade-up">
+          <div class="service-icon">🎭</div>
+          <h3>User Happiness Officer</h3>
+          <p>The actual job title of the people telling you "please allow us some additional time" for the 5th week in a row. "User Happiness" here refers to the happiness of the user as a concept, not yours specifically.</p>
+          <span class="service-tag tag-sportingly">Happiness Pending</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUOTE -->
+  <section class="section-blue quote-section">
+    <div class="container">
+      <p class="quote-text fade-up">
+        "A repair in such a case does not restore<br>the <em>original structural integrity</em> of the product."
+      </p>
+      <p class="quote-attr fade-up">— The customer, rejecting Decathlon's repair offer for a cracked weld on a frame they ride daily</p>
+    </div>
+  </section>
+
+  <!-- CEO LETTER -->
+  <section class="section-dark" id="ceo-letter">
+    <div class="container">
+      <div class="section-label">A Message From Leadership</div>
+      <h2 class="section-title fade-up">A Letter From Our<br>User Happiness Department.</h2>
+      <p class="section-subtitle fade-up">A completely satirical internal memo that definitely doesn't exist.</p>
+
+      <div class="ceo-letter fade-up">
+        <p>Dear Valued Sportsperson,</p>
+        <p>Let me begin by saying — <strong>Sportingly!</strong></p>
+        <p>At Decathlon, we believe that every customer interaction is a journey. And like all great journeys, it should take at least 37 days, involve a minimum of three support agents, and end only when the customer threatens legal action. That's the Decathlon way.</p>
+        <p>Some of you have reported that we rejected your warranty claim — first over the phone at the store, then again by email within 20 minutes — without citing any specific policy clause either time. This is by design. Our warranty rejection system operates on a two-tier model: the store says no over the phone so there's no paper trail, then email says no formally but without reasons so there's no clause to dispute. It's rejection architecture. We're quite proud of it.</p>
+        <p>When you asked for the "exact reason for rejection" and the "specific warranty clause," we responded with the only thing more powerful than evidence: <em>empathy</em>. "We truly empathize with your concern." See? You feel better already. The frame is still cracked, but emotionally, we've done our part.</p>
+        <p>We are particularly proud of our "relevant team" workflow. When a case is escalated to the relevant team, it enters a sacred space between queues — a liminal zone where time moves differently and spare parts exist in a state of quantum superposition: both dispatched and not arrived, simultaneously.</p>
+        <p>Regarding the spare part dispatched on March 18 with a delivery date of March 27 — we can confirm the spare part was dispatched. Whether it arrived is a philosophical question we leave to the store, the logistics team, and the universe to sort out between them.</p>
+        <p>Finally, we noticed you CC'd the National Consumer Helpline on your email. We respect this. In fact, it's the single most effective feature of our warranty process. We recommend it to all customers. Think of it as our secret "skip to resolution" button.</p>
+        <div class="signature">
+          <div class="name">Chief Happiness Architect*</div>
+          <div class="sig-title">Decathlon Sports India<br><span style="font-size:0.6rem;opacity:0.35;">*"Happiness" here refers to KPI dashboards, not customer outcomes</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CASE STUDY TIMELINE -->
+  <section id="case-study">
+    <div class="container">
+      <div class="section-label" style="color: var(--dec-blue);">Case Study</div>
+      <h2 class="section-title fade-up">Anatomy of a<br>37-Day Warranty Claim.</h2>
+      <p class="section-subtitle fade-up" style="color: var(--dec-dark-gray);">A real timeline. DOMYOS Exercise Bike, ₹19,999. Structural frame crack at the weld. 37 days, 21 emails. All verifiable.</p>
+
+      <div class="timeline">
+        <div class="timeline-item fade-up">
+          <div class="timeline-dot denied"></div>
+          <div class="timeline-date">February 23, 2026 — Day 0</div>
+          <div class="timeline-title">Store call. Warranty rejected over the phone.</div>
+          <div class="timeline-body">Customer calls the Decathlon store and reports the cracked frame to a store representative. Despite the product being within warranty and the crack being a clear structural defect at the weld joint, the store verbally rejects the warranty claim over the phone — stating it's "not covered." No written reason. No policy cited. Just a flat no over a phone call. Customer is told to contact email support.</div>
+          <span class="timeline-status status-denied">✗ Rejected over phone — no reason given</span>
+        </div>
+
+        <div class="timeline-item fade-up">
+          <div class="timeline-dot denied"></div>
+          <div class="timeline-date">February 27, 2026 — Day 4</div>
+          <div class="timeline-title">Customer emails support with full documentation</div>
+          <div class="timeline-body">Detailed email with order ID, photos of the structural crack near the weld joint on the DOMYOS exercise bike. Product within warranty period. References the phone call to the store on Feb 23 and their refusal to help.</div>
+          <span class="timeline-status status-denied">Attempt #2 begins</span>
+        </div>
+
+        <div class="timeline-item fade-up">
+          <div class="timeline-dot denied"></div>
+          <div class="timeline-date">February 27, 2026 — 14:23 (20 minutes later)</div>
+          <div class="timeline-title">Email warranty claim also rejected. Again no reason.</div>
+          <div class="timeline-body">"We regret to inform you that we are unable to provide warranty coverage in this specific case." No clause cited. No technical reason. Just a second rejection in 4 days — this time in 20 minutes flat. The store said no. Email said no. Nobody said why. Signed "Sportingly!"</div>
+          <span class="timeline-status status-denied">✗ Rejection #2 — 20 minutes, 0 clauses</span>
+        </div>
+
+        <div class="timeline-item fade-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">February 27, 2026 — Day 4 (continued)</div>
+          <div class="timeline-title">Customer pushes back with warranty policy screenshot</div>
+          <div class="timeline-body">Requests the exact rejection reason, the specific warranty clause, and an escalation to the technical team. Attaches Decathlon's own warranty policy showing frame coverage. Two rejections in 4 days — store and email — and neither cited a single clause. The response: "escalated to the relevant team." 72-hour promise begins.</div>
+          <span class="timeline-status status-waiting">⟳ Escalated</span>
+        </div>
+
+        <div class="timeline-item fade-up">
+          <div class="timeline-dot waiting"></div>
+          <div class="timeline-date">March 4–5, 2026 — Day 10-11</div>
+          <div class="timeline-title">72 hours become 10 days. Photos requested again.</div>
+          <div class="timeline-body">Customer follows up after 5 days of silence. Decathlon asks for photos — the same photos already sent in the first email. Customer re-sends 5 detailed images including close-ups of the crack.</div>
+          <span class="timeline-status status-waiting">⟳ Photos re-requested</span>
+        </div>
+
+        <div class="timeline-item fade-up">
+          <div class="timeline-dot waiting"></div>
+          <div class="timeline-date">March 7, 2026 — Day 13</div>
+          <div class="timeline-title">Another 48-hour promise. Checking "spare parts."</div>
+          <div class="timeline-body">Customer follows up again. Decathlon promises update in 48 hours, mentions checking spare part availability. The 48 hours will stretch into another week.</div>
+          <span class="timeline-status status-waiting">⟳ 48 hours (Decathlon Time™)</span>
+        </div>
+
+        <div class="timeline-item fade-up">
+          <div class="timeline-dot waiting"></div>
+          <div class="timeline-date">March 15, 2026 — Day 21</div>
+          <div class="timeline-title">Customer CC's National Consumer Helpline</div>
+          <div class="timeline-body">"If I do not receive a satisfactory response within the next 48 hours, I will be compelled to proceed with filing a formal complaint through the National Consumer Helpline and the Consumer Disputes Redressal Commission." Things start moving. Coincidence? Absolutely not.</div>
+          <span class="timeline-status status-denied">⚠ NCH CC'd — Day 21</span>
+        </div>
+
+        <div class="timeline-item fade-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">March 16–18, 2026 — Day 22-24</div>
+          <div class="timeline-title">Suddenly, a phone call. Spare part dispatched.</div>
+          <div class="timeline-body">After the NCH CC, Decathlon calls. Store coordination begins. On March 18, spare part dispatched to store with expected delivery: March 27. Progress appears for the first time in 3 weeks. Funny how that works.</div>
+          <span class="timeline-status status-waiting">⟳ Part dispatched (allegedly)</span>
+        </div>
+
+        <div class="timeline-item fade-up">
+          <div class="timeline-dot waiting"></div>
+          <div class="timeline-date">March 27, 2026 — Day 33</div>
+          <div class="timeline-title">Delivery date arrives. No confirmation. More "please allow time."</div>
+          <div class="timeline-body">The spare was supposed to arrive today. No confirmation from the store. Decathlon's response: "Please do not worry." "Allow us some additional time." The customer threatens to file a formal complaint by March 29.</div>
+          <span class="timeline-status status-denied">✗ Delivery date missed</span>
+        </div>
+
+        <div class="timeline-item fade-up">
+          <div class="timeline-dot denied"></div>
+          <div class="timeline-date">March 30, 2026 — Day 36</div>
+          <div class="timeline-title">EasyFix calls for repair. Customer declines.</div>
+          <div class="timeline-body">A service partner calls to schedule a repair. Customer declines: "A repair does not restore the original structural integrity." Requests full replacement. Files complaint with National Consumer Helpline.</div>
+          <span class="timeline-status status-denied">✗ Repair rejected — safety concern</span>
+        </div>
+
+        <div class="timeline-item fade-up">
+          <div class="timeline-dot resolved"></div>
+          <div class="timeline-date">April 1, 2026 — Day 37</div>
+          <div class="timeline-title">Replacement finally approved.</div>
+          <div class="timeline-body">"As we discussed over the call, please allow us a few days to arrange the technician team for uninstallation. Once that is completed, we will proceed with the return and replacement." 37 days. 21 emails. 3 agents. 2 rejections. 1 Consumer Helpline threat. That's what it takes.</div>
+          <span class="timeline-status status-resolved">✓ Replacement approved — Day 37</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE WALL -->
+  <section class="section-light" id="wall">
+    <div class="container">
+      <div class="section-label" style="color: var(--dec-blue);">The Wall of Sportingly</div>
+      <h2 class="section-title fade-up">Things Actually Said<br>In These 21 Emails.</h2>
+      <p class="section-subtitle fade-up" style="color: var(--dec-dark-gray);">Real phrases from real Decathlon support emails. You can't make this up.</p>
+
+      <div class="complaints-grid">
+        <div class="complaint-card fade-up">
+          <div class="complaint-category">The Phone Shutdown</div>
+          <div class="complaint-text">"Not covered under warranty." — Said verbally at the store on Feb 23, with zero explanation. No written reason, no policy reference, no inspection. Just a flat rejection and a suggestion to email support. The store staff ignored Decathlon's own warranty policy covering frames.</div>
+          <div class="complaint-meta"><span>Phone call, Feb 23</span><span class="complaint-rating">Rejection #1</span></div>
+        </div>
+        <div class="complaint-card fade-up">
+          <div class="complaint-category">The Speed-Rejection</div>
+          <div class="complaint-text">"We regret to inform you that we are unable to provide warranty coverage in this specific case." — Sent 20 minutes after the claim. No investigation. No technician. Just rejection at the speed of light.</div>
+          <div class="complaint-meta"><span>Email #2</span><span class="complaint-rating">Feb 27, 14:23</span></div>
+        </div>
+        <div class="complaint-card fade-up">
+          <div class="complaint-category">The Phantom Clause</div>
+          <div class="complaint-text">"We recommend reviewing the warranty terms and conditions provided at the time of purchase." — Instead of telling the customer which clause applies, they tell the customer to go find it themselves. Bold move.</div>
+          <div class="complaint-meta"><span>Email #2</span><span class="complaint-rating">Deflection Level: Expert</span></div>
+        </div>
+        <div class="complaint-card fade-up">
+          <div class="complaint-category">The Re-Ask</div>
+          <div class="complaint-text">"Could you please share images of the item along with clear photos of the visible damage?" — Asked 6 days after the customer already sent photos with the original email. The images were right there.</div>
+          <div class="complaint-meta"><span>Email #5</span><span class="complaint-rating">Mar 5</span></div>
+        </div>
+        <div class="complaint-card fade-up">
+          <div class="complaint-category">The Eternal Promise</div>
+          <div class="complaint-text">"We kindly request a lead time of 72 hours to provide you with an update." — These 72 hours eventually turned into 37 days. The ratio of promised hours to actual hours is approximately 1:12.</div>
+          <div class="complaint-meta"><span>Email #4</span><span class="complaint-rating">Feb 27</span></div>
+        </div>
+        <div class="complaint-card fade-up">
+          <div class="complaint-category">The Copy-Paste Empathy</div>
+          <div class="complaint-text">"We completely understand how important this matter is for you, and we truly empathize with your concern." — This exact sentence appears in at least 3 different emails from 2 different agents. The empathy is pre-written.</div>
+          <div class="complaint-meta"><span>Multiple emails</span><span class="complaint-rating">Ctrl+V Energy</span></div>
+        </div>
+        <div class="complaint-card fade-up">
+          <div class="complaint-category">The Grateful Customer Bit</div>
+          <div class="complaint-text">"We are truly grateful to have a customer like you who has been cooperating throughout the process." — After 37 days of delay, they thank the customer for cooperating. Stockholm syndrome at corporate scale.</div>
+          <div class="complaint-meta"><span>Email #19</span><span class="complaint-rating">Mar 28</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPARISON -->
+  <section class="section-dark" id="comparison">
+    <div class="container">
+      <div class="section-label">Feature Comparison</div>
+      <h2 class="section-title fade-up">What You're Promised vs.<br>What You Actually Get.</h2>
+
+      <div style="overflow-x: auto;">
+        <table class="comparison-table fade-up">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>What Decathlon Promises</th>
+              <th>What Actually Happens</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="font-weight:700; color: var(--dec-white);">Phone Support</td>
+              <td>Call store for warranty assessment</td>
+              <td>Verbal rejection over phone, no documentation, told to email support instead</td>
+            </tr>
+            <tr>
+              <td style="font-weight:700; color: var(--dec-white);">Frame Warranty</td>
+              <td>Covered under warranty policy</td>
+              <td>Rejected in 20 minutes without citing any clause</td>
+            </tr>
+            <tr>
+              <td style="font-weight:700; color: var(--dec-white);">Response Time</td>
+              <td>"72 hours" / "48 hours"</td>
+              <td>37 days (approximately 12x the promised time)</td>
+            </tr>
+            <tr>
+              <td style="font-weight:700; color: var(--dec-white);">Escalation</td>
+              <td>"Escalated to the relevant team"</td>
+              <td>Enters a void. Emerges only when NCH is CC'd.</td>
+            </tr>
+            <tr>
+              <td style="font-weight:700; color: var(--dec-white);">Photo Review</td>
+              <td>Send photos for assessment</td>
+              <td>Send photos. Wait 6 days. Send the same photos again.</td>
+            </tr>
+            <tr>
+              <td style="font-weight:700; color: var(--dec-white);">Spare Parts</td>
+              <td>"Dispatched to store, delivery by March 27"</td>
+              <td>March 27 arrives. No confirmation. "Please allow more time."</td>
+            </tr>
+            <tr>
+              <td style="font-weight:700; color: var(--dec-white);">Resolution</td>
+              <td>Repair or replacement under warranty</td>
+              <td>Repair attempted after 36 days. Replacement only after customer declines.</td>
+            </tr>
+            <tr>
+              <td style="font-weight:700; color: var(--dec-white);">User Happiness</td>
+              <td>"User Happiness Officer" assigned</td>
+              <td>3 different Happiness Officers, 0 happiness delivered</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- GLOSSARY -->
+  <section class="section-dark" id="glossary">
+    <div class="container">
+      <div class="section-label">The Decathlon Dictionary</div>
+      <h2 class="section-title fade-up">What They Say vs.<br>What They Mean.</h2>
+
+      <div class="glossary-grid">
+        <div class="glossary-item fade-up">
+          <div class="glossary-term">"Sportingly!"</div>
+          <div class="glossary-official">Official: A cheerful sign-off.</div>
+          <div class="glossary-actual">Actual: The corporate equivalent of "LOL" at the end of a rejection email. Used after denying your warranty claim, delaying your resolution, and asking for photos you already sent.</div>
+        </div>
+        <div class="glossary-item fade-up">
+          <div class="glossary-term">"Escalated to the Relevant Team"</div>
+          <div class="glossary-official">Official: A senior team is now handling your case.</div>
+          <div class="glossary-actual">Actual: Your email has been forwarded to an inbox that nobody checks until a government body is CC'd. The "relevant team" is Schrödinger's department.</div>
+        </div>
+        <div class="glossary-item fade-up">
+          <div class="glossary-term">"User Happiness Officer"</div>
+          <div class="glossary-official">Official: A dedicated support professional focused on your satisfaction.</div>
+          <div class="glossary-actual">Actual: A person whose job is to write "we truly empathize with your concern" while the concern remains unaddressed. Happiness is the aspiration, not the outcome.</div>
+        </div>
+        <div class="glossary-item fade-up">
+          <div class="glossary-term">"Lead Time of 72 Hours"</div>
+          <div class="glossary-official">Official: You'll hear back within 3 days.</div>
+          <div class="glossary-actual">Actual: A renewable promise. When 72 hours expire, a new 48-hour promise is issued. This loop continues until you CC a regulatory body or achieve enlightenment.</div>
+        </div>
+        <div class="glossary-item fade-up">
+          <div class="glossary-term">"Please Do Not Worry"</div>
+          <div class="glossary-official">Official: We've got this under control.</div>
+          <div class="glossary-actual">Actual: Worry. Worry a lot. This phrase appears exclusively when nothing is happening and nobody knows what's going on.</div>
+        </div>
+        <div class="glossary-item fade-up">
+          <div class="glossary-term">"Could You Please Share Images"</div>
+          <div class="glossary-official">Official: We need photos to assess the damage.</div>
+          <div class="glossary-actual">Actual: We lost the photos you already sent, or nobody looked at them. Either way, the clock resets. Send them again. Think of it as a photography portfolio review.</div>
+        </div>
+        <div class="glossary-item fade-up">
+          <div class="glossary-term">"We Truly Empathize"</div>
+          <div class="glossary-official">Official: We feel your pain.</div>
+          <div class="glossary-actual">Actual: A templated sentence that precedes another delay. The empathy is inversely proportional to the action taken. Maximum empathy = minimum progress.</div>
+        </div>
+        <div class="glossary-item fade-up">
+          <div class="glossary-term">"Actively Working On This Case"</div>
+          <div class="glossary-official">Official: Your case is being handled right now.</div>
+          <div class="glossary-actual">Actual: "Actively" means the case file exists in a system somewhere. "Working" means someone has read the subject line. "On this case" means yours specifically, among thousands of identical delay loops.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COUNTER -->
+  <section class="section-blue counter-section">
+    <div class="container fade-up">
+      <div class="counter-number" id="day-counter">0</div>
+      <div class="counter-label">days since the frame cracked and the warranty saga began</div>
+      <div class="counter-sub">(February 23, 2026 — and counting)</div>
+    </div>
+  </section>
+
+  <!-- BINGO -->
+  <section class="section-dark" id="bingo">
+    <div class="container">
+      <div class="section-label">Interactive</div>
+      <h2 class="section-title fade-up" style="text-align:center;">Decathlon Support Bingo</h2>
+      <p class="section-subtitle fade-up" style="text-align:center; margin: 0 auto;">Click squares as you experience them. Get five in a row and win the same thing Decathlon gave us for 37 days: nothing.</p>
+
+      <div class="bingo-grid fade-up" id="bingo-board">
+        <button class="bingo-cell">"Sportingly!"</button>
+        <button class="bingo-cell">Warranty rejected instantly</button>
+        <button class="bingo-cell">Asked for photos again</button>
+        <button class="bingo-cell">"72 hours" becomes a week</button>
+        <button class="bingo-cell">Agent changes mid-case</button>
+        <button class="bingo-cell">"Relevant team" invoked</button>
+        <button class="bingo-cell">"Please do not worry"</button>
+        <button class="bingo-cell">No clause cited in rejection</button>
+        <button class="bingo-cell">"We truly empathize"</button>
+        <button class="bingo-cell">Spare part "dispatched"</button>
+        <button class="bingo-cell">Same template, different name</button>
+        <button class="bingo-cell">"Actively working on it"</button>
+        <button class="bingo-cell free" disabled>FREE SPACE<br>(frame still cracked)</button>
+        <button class="bingo-cell">"Allow additional time"</button>
+        <button class="bingo-cell">Delivery date missed</button>
+        <button class="bingo-cell">"User Happiness Officer"</button>
+        <button class="bingo-cell">NCH CC gets results</button>
+        <button class="bingo-cell">Repair offered for safety issue</button>
+        <button class="bingo-cell">"Your satisfaction matters"</button>
+        <button class="bingo-cell">"Lead time of 48 hours"</button>
+        <button class="bingo-cell">Store coordination begins Day 22</button>
+        <button class="bingo-cell">No proactive update ever</button>
+        <button class="bingo-cell">"We appreciate your patience"</button>
+        <button class="bingo-cell">Complaint needed for progress</button>
+        <button class="bingo-cell">37 days for "replacement"</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section-dark" id="faq">
+    <div class="container">
+      <div class="section-label">Frequently Ignored Questions</div>
+      <h2 class="section-title fade-up" style="text-align:center;">FIQs — Because FAQ<br>Implies Someone Answers Them.</h2>
+
+      <div class="faq-list">
+        <div class="faq-item fade-up">
+          <button class="faq-question"><span>Why was my warranty rejected twice — over the phone and by email?</span></button>
+          <div class="faq-answer">The first rejection happened over the phone on Feb 23 — a verbal "not covered under warranty" with zero documentation, zero inspection, and zero policy reference. When the customer then emailed support on Feb 27 with full documentation including photos, the email team rejected it again within 20 minutes — also without citing any specific clause. Two rejections in 4 days from two different channels, neither providing a reason. The customer had to send Decathlon's own warranty policy showing frame coverage before anyone even acknowledged the claim might be valid. It's rejection by reflex — deny first, investigate never.</div>
+        </div>
+        <div class="faq-item fade-up">
+          <button class="faq-question"><span>Why did they ask for photos I already sent?</span></button>
+          <div class="faq-answer">Two possibilities. One: nobody opened the first email's attachments. Two: the "relevant team" that the case was "escalated" to doesn't have access to the original email thread. Either way, you're now a professional product photographer for Decathlon, unpaid, doing quality documentation that their own team should have done during the 20-minute rejection window.</div>
+        </div>
+        <div class="faq-item fade-up">
+          <button class="faq-question"><span>What does "escalated to the relevant team" actually mean?</span></button>
+          <div class="faq-answer">It means your email has been forwarded. That's it. There is no visible change in urgency, timeline, or outcome. The "relevant team" operates on the same timeline as the irrelevant team. The only difference is that "escalated" buys another 72-hour window of silence, which can be renewed indefinitely. Think of it as a subscription to hope.</div>
+        </div>
+        <div class="faq-item fade-up">
+          <button class="faq-question"><span>Why did the spare part dispatch not result in actual delivery?</span></button>
+          <div class="faq-answer">On March 18, Decathlon confirmed: spare dispatched, delivery by March 27. On March 27, the customer asked for confirmation. Decathlon's response: "Please do not worry." The spare part exists in a logistical Bermuda Triangle — dispatched but not arrived, tracked but not confirmed. It has been "actively being coordinated" since then, which is corporate for "we'll check tomorrow."</div>
+        </div>
+        <div class="faq-item fade-up">
+          <button class="faq-question"><span>Does CC'ing the National Consumer Helpline actually work?</span></button>
+          <div class="faq-answer">Yes. Spectacularly. For 21 days, the case moved at the speed of template empathy. On Day 21, the National Consumer Helpline was CC'd. On Day 22, Decathlon called. On Day 24, spare parts were dispatched. The correlation is not subtle. If you want Decathlon to move, don't send emails — send regulatory signals.</div>
+        </div>
+        <div class="faq-item fade-up">
+          <button class="faq-question"><span>Why did the customer reject the repair?</span></button>
+          <div class="faq-answer">Because the crack is at the main frame weld — the structural joint that bears the user's weight during exercise. A repair (welding or patching) at this point does not restore the original structural integrity. The customer isn't being difficult; they're being rational. You don't patch a bridge and tell people to drive on it. You replace it. Decathlon eventually agreed, but only after 37 days and a formal consumer complaint.</div>
+        </div>
+        <div class="faq-item fade-up">
+          <button class="faq-question"><span>What is a "User Happiness Officer"?</span></button>
+          <div class="faq-answer">It is the actual job title used by Decathlon India for their customer support agents. Three different User Happiness Officers handled this case: Agent M, Agent S, and Agent R. Between them, they produced approximately 15 emails containing the phrases "please do not worry," "we truly empathize," and "allow us some additional time." User Happiness was never achieved, but the title remains aspirational.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AWARDS -->
+  <section id="awards">
+    <div class="container">
+      <div class="section-label" style="color: var(--dec-blue);">Hall of Achievements</div>
+      <h2 class="section-title fade-up">Awards Decathlon Would Win<br>If Honesty Were a Category.</h2>
+
+      <div class="awards-grid">
+        <div class="award-card fade-up">
+          <div class="award-icon">⚡</div>
+          <div class="award-title">Fastest Rejection</div>
+          <div class="award-desc">20 minutes from claim to denial, without citing a single warranty clause</div>
+          <div class="award-year">Speed Record 2026</div>
+        </div>
+        <div class="award-card fade-up">
+          <div class="award-icon">🎭</div>
+          <div class="award-title">Best Templated Empathy</div>
+          <div class="award-desc">"We truly empathize with your concern" used identically across 3 agents</div>
+          <div class="award-year">Ctrl+V Excellence</div>
+        </div>
+        <div class="award-card fade-up">
+          <div class="award-icon">📸</div>
+          <div class="award-title">Most Photos Requested Twice</div>
+          <div class="award-desc">For asking a customer to re-send photos that were in the original email</div>
+          <div class="award-year">Attachment Blindness Award</div>
+        </div>
+        <div class="award-card fade-up">
+          <div class="award-icon">⏳</div>
+          <div class="award-title">Creative Time Dilation</div>
+          <div class="award-desc">For converting "72 hours" into 37 days through pure corporate alchemy</div>
+          <div class="award-year">Physics-Defying 2026</div>
+        </div>
+        <div class="award-card fade-up">
+          <div class="award-icon">🔄</div>
+          <div class="award-title">Agent Rotation Champion</div>
+          <div class="award-desc">3 agents, same case, same templates, zero continuity</div>
+          <div class="award-year">Team Coordination Award</div>
+        </div>
+        <div class="award-card fade-up">
+          <div class="award-icon">📬</div>
+          <div class="award-title">Most Effective NCH CC</div>
+          <div class="award-desc">For a support process where the fastest path to resolution is threatening legal action</div>
+          <div class="award-year">Consumer Rights Speedrun</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECOND QUOTE -->
+  <section class="section-blue quote-section">
+    <div class="container">
+      <p class="quote-text fade-up">
+        "I value Decathlon's customer support and would prefer to<br>resolve this matter directly. However, if the issue remains unresolved,<br>I may have to consider <em>appropriate consumer grievance channels.</em>"
+      </p>
+      <p class="quote-attr fade-up">— Day 11 email (Day 4 of emailing, Day 21 before anyone actually acted). It took a NCH CC for anything to happen.</p>
+    </div>
+  </section>
+
+  <!-- ESCALATION GUIDE -->
+  <section id="escalation">
+    <div class="container">
+      <div class="section-label" style="color: var(--dec-blue);">Actually Useful</div>
+      <h2 class="section-title fade-up">How to Actually Get<br>Your Decathlon Issue Fixed.</h2>
+      <p class="section-subtitle fade-up" style="color: var(--dec-dark-gray); margin-bottom: 1.5rem;">Since Decathlon's own process clearly doesn't work, here's what actually does — tested and verified.</p>
+
+      <div class="escalation-grid">
+        <div class="escalation-card fade-up">
+          <div class="escalation-step">Step 1</div>
+          <div class="escalation-text"><strong>Email <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="3655574453185f58525f577652535557425e5a59581855595b">[email&#160;protected]</a> with full documentation.</strong> Include order ID, purchase date, photos, and a clear description. Note the warranty policy clause that applies. Be polite but specific.</div>
+        </div>
+        <div class="escalation-card fade-up">
+          <div class="escalation-step">Step 2</div>
+          <div class="escalation-text"><strong>Follow up every 48-72 hours.</strong> Don't let the email thread go cold. Each follow-up creates a documented trail and demonstrates persistence. Save every email.</div>
+        </div>
+        <div class="escalation-card fade-up">
+          <div class="escalation-step">Step 3</div>
+          <div class="escalation-text"><strong>CC the National Consumer Helpline (<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="7c121f14511f1d3c1b130a521512">[email&#160;protected]</a>) by Day 14–21.</strong> This is the single most effective action. In this case, it turned 21 days of silence into a phone call within 24 hours.</div>
+        </div>
+        <div class="escalation-card fade-up">
+          <div class="escalation-step">Step 4</div>
+          <div class="escalation-text"><strong>File on the National Consumer Helpline portal.</strong> Visit consumerhelpline.gov.in and file a formal complaint with all documentation. Decathlon is obligated to respond.</div>
+        </div>
+        <div class="escalation-card fade-up">
+          <div class="escalation-step">Step 5</div>
+          <div class="escalation-text"><strong>Don't accept unsafe repairs.</strong> If the defect is structural (frame, weld, load-bearing component), insist on replacement. A repaired weld on a cracked frame is a safety liability, not a resolution.</div>
+        </div>
+        <div class="escalation-card fade-up">
+          <div class="escalation-step">Nuclear Option</div>
+          <div class="escalation-text"><strong>Build a satirical website.</strong> Document everything. Make it beautiful. Let the internet decide if "Sportingly!" is an adequate response to a cracked frame. You're looking at the result.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUBMIT YOUR STORY -->
+  <section class="story-section section-dark" id="stories">
+    <div class="container">
+      <div class="section-label">The Dead Man's Switch</div>
+      <h2 class="section-title fade-up" style="text-align:center;">Got a Decathlon Horror Story?<br>Send It. We'll Verify It. We'll Post It.</h2>
+      <p class="section-subtitle fade-up" style="text-align:center; margin: 0 auto; color: rgba(255,255,255,0.5);">This site stays up until the replacement arrives. But here's the thing — if Decathlon does this to someone else, the site comes back. With their story on the wall.</p>
+
+      <div class="story-box fade-up">
+        <div style="font-size:2rem; margin-bottom:1rem;">📧</div>
+        <h3 style="color: var(--dec-white); font-size: 1.2rem; margin-bottom: 0.75rem;">Share Your Warranty Nightmare</h3>
+        <p style="color: rgba(255,255,255,0.5); font-size: 0.9rem; line-height: 1.6; margin-bottom: 1rem;">Send your Decathlon warranty rejection, support runaround, or "Sportingly!" horror story with screenshots/evidence. If it's real, it goes on the wall.</p>
+        <a href="mailto:stories@sportingly.in?subject=Decathlon%20Warranty%20Horror%20Story" class="story-email">stories@sportingly.in</a>
+        <p class="story-note">Include: order ID, dates, screenshots of emails, photos of the defect. We verify everything before publishing. No names are published without consent.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DONATE -->
+  <section class="section-dark donate-section" id="support">
+    <div class="container">
+      <div class="section-label">Fuel The Satire</div>
+      <h2 class="section-title fade-up" style="text-align:center;">Keep This Site Running.</h2>
+      <p class="section-subtitle fade-up" style="text-align:center; margin: 0 auto; color: rgba(255,255,255,0.5);">Decathlon won't fix the frame, but you can keep the satire alive. Domain costs money. Pettiness is free but hosting isn't.</p>
+
+      <div class="donate-grid fade-up">
+        <a href="https://buymeacoffee.com/sportingly" target="_blank" rel="noopener noreferrer" class="donate-card">
+          <div class="donate-icon">☕</div>
+          <h3>Buy Me a Coffee</h3>
+          <p>The safest payment platform for satirical websites. Unlike Decathlon's warranty process, your coffee actually delivers. Sportingly!</p>
+        </a>
+        <div class="donate-card" style="text-align:center;">
+          <div class="donate-icon">📱</div>
+          <h3>UPI Direct</h3>
+          <p>Scan the QR or pay directly via UPI. No middleman, no frozen accounts, no "relevant team" involved.</p>
+          <p style="margin-top: 0.75rem; font-size: 0.8rem; color: var(--dec-blue); font-family: 'JetBrains Mono', monospace;">[UPI ID will go here]</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- Share Buttons -->
+  <div class="share-float">
+    <a class="share-btn share-btn-wa" href="https://wa.me/?text=1%20cracked%20frame.%202%20rejections.%2021%20emails.%2037%20days.%20This%20is%20what%20it%20takes%20to%20get%20a%20warranty%20replacement%20from%20Decathlon.%20Sportingly!%20https://sportingly.in" target="_blank" rel="noopener">WA</a>
+    <a class="share-btn share-btn-x" href="https://twitter.com/intent/tweet?text=1%20cracked%20frame.%202%20rejections.%2021%20emails.%2037%20days.%20This%20is%20what%20it%20takes%20to%20get%20a%20warranty%20replacement%20from%20%40Decathlon%20%E2%80%94%20Sportingly!&url=https://sportingly.in" target="_blank" rel="noopener">𝕏</a>
+    <button class="share-btn share-btn-copy" id="copy-link">📋</button>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-disclaimer">
+      <strong>Disclaimer:</strong> This is a satirical website born from genuine, documented, verifiable customer frustration —
+      the kind that 37 days of patience and 21 emails produce.
+      The case study is real. The email timestamps are real. The cracked frame is real.
+      This site is not affiliated with Decathlon Sports India — though at this point, we've spent more time
+      documenting their warranty process than they spent reviewing our claim.
+      <br><br>
+      <strong>To Decathlon:</strong> This is what happens when you reject a valid warranty claim over the phone without documentation,
+      reject it again by email in 20 minutes without citing a clause,
+      then take 37 days to reach the conclusion that yes, a cracked frame should be replaced.
+      Every "Sportingly!" sign-off on a delay email is a paragraph on this website. You built this. We just gave it a URL.
+      <br><br>
+      <strong>The Deal:</strong> This site goes dark the day the replacement bike arrives at my door — installed and working.
+      Not when you promise it. Not when you dispatch it. When it's physically here.
+      But if anyone sends a verified Decathlon warranty horror story to <a href="mailto:stories@sportingly.in">stories@sportingly.in</a>,
+      the site comes back — with their story added to the wall.
+      You gave me 37 days of "please allow additional time." I'm returning the favour. Sportingly!
+      <br><br>
+      <span style="color: var(--dec-blue);">Built with HTML, CSS, and 37 days of Sportingly!-grade frustration.</span>
+    </div>
+    <div class="footer-tagline">
+      sportingly.in — because empathy does not fix cracked frames.<br>
+      <span style="font-size: 0.7rem; margin-top: 0.4rem; display: inline-block;">This website loads faster than Decathlon processes warranty claims. And it was built in an afternoon.</span>
+    </div>
+  </footer>
+
+  <script>
+    // Scroll reveal
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+    // Live day counter — days since Feb 23, 2026
+    function animateCounter() {
+      const counter = document.getElementById('day-counter');
+      const start = new Date('2026-02-23');
+      const now = new Date();
+      const target = Math.max(0, Math.floor((now - start) / (1000 * 60 * 60 * 24)));
+      let current = 0;
+      const step = Math.max(1, Math.floor(target / 50));
+      const interval = setInterval(() => {
+        current += step;
+        if (current >= target) { current = target; clearInterval(interval); }
+        counter.textContent = current;
+      }, 30);
+    }
+
+    const counterObs = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) { animateCounter(); counterObs.disconnect(); }
+      });
+    }, { threshold: 0.5 });
+    counterObs.observe(document.getElementById('day-counter'));
+
+    // Bingo
+    document.querySelectorAll('.bingo-cell:not(.free)').forEach(cell => {
+      cell.addEventListener('click', () => {
+        cell.classList.toggle('stamped');
+        checkBingo();
+      });
+    });
+
+    function checkBingo() {
+      const cells = document.querySelectorAll('.bingo-cell');
+      const grid = [];
+      for (let i = 0; i < 25; i++) {
+        grid.push(cells[i].classList.contains('stamped') || cells[i].classList.contains('free'));
+      }
+      for (let i = 0; i < 5; i++) {
+        if ([0,1,2,3,4].every(j => grid[i*5+j]) || [0,1,2,3,4].every(j => grid[j*5+i])) { showBingoWin(); return; }
+      }
+      if ([0,6,12,18,24].every(i => grid[i]) || [4,8,12,16,20].every(i => grid[i])) showBingoWin();
+    }
+
+    function showBingoWin() {
+      const board = document.getElementById('bingo-board');
+      if (board.dataset.won) return;
+      board.dataset.won = 'true';
+      const msg = document.createElement('div');
+      msg.style.cssText = 'text-align:center;margin-top:1.5rem;padding:1.25rem;background:rgba(0,130,195,0.08);border-radius:12px;border:1px solid rgba(0,130,195,0.2);';
+      msg.innerHTML = '<p style="font-size:1.3rem;font-weight:800;color:#0082C3;margin-bottom:0.4rem;">🎉 BINGO! Sportingly!</p><p style="font-size:0.85rem;color:rgba(255,255,255,0.5);">Your prize is the same as Decathlon\'s 72-hour promise: aspirational but ultimately unfulfilled. Sportingly!</p>';
+      board.parentNode.insertBefore(msg, board.nextSibling);
+    }
+
+    // FAQ toggle
+    document.querySelectorAll('.faq-question').forEach(q => {
+      q.addEventListener('click', () => {
+        const item = q.parentElement;
+        const wasOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+        if (!wasOpen) item.classList.add('open');
+      });
+    });
+
+    // Smooth scroll
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const target = document.querySelector(link.getAttribute('href'));
+        if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+
+    // Loading screen
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        document.getElementById('loading-screen').classList.add('hidden');
+      }, 1800);
+    });
+
+    // Hamburger menu
+    document.getElementById('hamburger').addEventListener('click', () => {
+      document.getElementById('nav-links').classList.toggle('open');
+    });
+
+    // Close mobile menu on nav link click
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.getElementById('nav-links').classList.remove('open');
+      });
+    });
+
+    // Copy link button
+    document.getElementById('copy-link').addEventListener('click', () => {
+      navigator.clipboard.writeText('https://sportingly.in').then(() => {
+        const btn = document.getElementById('copy-link');
+        btn.textContent = '✓ Copied!';
+        setTimeout(() => { btn.textContent = '📋 Copy Link'; }, 2000);
+      });
+    });
+  </script>
+
+  <!-- Buy Me a Coffee Widget — replace "sportingly" with your actual BMC username -->
+  <script data-name="BMC-Widget" data-cfasync="false" 
+    src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" 
+    data-id="sportingly" 
+    data-description="Support me on Buy me a coffee!" 
+    data-message="Decathlon won't fix the frame, but your coffee keeps the satire alive. Sportingly!" 
+    data-color="#0082C3" 
+    data-position="Left" 
+    data-x_margin="18" 
+    data-y_margin="18">
+  </script>
+</body>
+</html>
