@@ -12,7 +12,8 @@
   <meta property="og:title" content="Sportingly! — Decathlon Warranty Experience">
   <meta property="og:description" content="1 cracked frame. 2 rejections. 21 emails. 37 days. A satirical tribute to Decathlon's commitment to ignoring warranty claims — Sportingly!">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://sportingly.in/">
+  <meta property="og:image" content="https://sportingly-mn3g.vercel.app/preview.png">
+  <meta property="og:url" content="https://sportingly-mn3g.vercel.app/">
   <meta property="og:site_name" content="Sportingly!">
   <meta property="og:locale" content="en_IN">
 
@@ -1828,18 +1829,15 @@
       <h2 class="section-title fade-up" style="text-align:center;">Keep This Site Running.</h2>
       <p class="section-subtitle fade-up" style="text-align:center; margin: 0 auto; color: rgba(255,255,255,0.5);">Decathlon won't fix the frame, but you can keep the satire alive. Domain costs money. Pettiness is free but hosting isn't.</p>
 
-      <div class="donate-grid fade-up">
-        <a href="https://buymeacoffee.com/sportingly" target="_blank" rel="noopener noreferrer" class="donate-card">
-          <div class="donate-icon">☕</div>
-          <h3>Buy Me a Coffee</h3>
-          <p>The safest payment platform for satirical websites. Unlike Decathlon's warranty process, your coffee actually delivers. Sportingly!</p>
-        </a>
-        <div class="donate-card" style="text-align:center;">
-          <div class="donate-icon">📱</div>
-          <h3>UPI Direct</h3>
-          <p>Scan the QR or pay directly via UPI. No middleman, no frozen accounts, no "relevant team" involved.</p>
-          <p style="margin-top: 0.75rem; font-size: 0.8rem; color: var(--dec-blue); font-family: 'JetBrains Mono', monospace;">[UPI ID will go here]</p>
-        </div>
+   <button onclick="kofiwidget2.open()" class="donate-card" style="border:none;">
+  <div class="donate-icon">☕</div>
+  <h3>Support this project</h3>
+  <p>
+    37 days. 21 emails. If this deserved better — you can support this work.
+  </p>
+</button>
+
+
       </div>
     </div>
   </section>
@@ -1990,16 +1988,14 @@
     });
   </script>
 
-  <!-- Buy Me a Coffee Widget — replace "sportingly" with your actual BMC username -->
-  <script data-name="BMC-Widget" data-cfasync="false" 
-    src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" 
-    data-id="sportingly" 
-    data-description="Support me on Buy me a coffee!" 
-    data-message="Decathlon won't fix the frame, but your coffee keeps the satire alive. Sportingly!" 
-    data-color="#0082C3" 
-    data-position="Left" 
-    data-x_margin="18" 
-    data-y_margin="18">
-  </script>
+<script src="https://storage.ko-fi.com/cdn/scripts/overlay-widget.js"></script>
+<script>
+  kofiWidgetOverlay.draw('manishkumarlakhiwal', {
+    'type': 'floating-chat',
+    'floating-chat.donateButton.text': 'Support me',
+    'floating-chat.donateButton.background-color': '#0082C3',
+    'floating-chat.donateButton.text-color': '#fff'
+  });
+</script>
 </body>
 </html>
